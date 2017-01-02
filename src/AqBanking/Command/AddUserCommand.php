@@ -25,7 +25,8 @@ class AddUserCommand extends AbstractCommand
             . ' --bank=' . escapeshellcmd($user->getBank()->getBankCode()->getString())
             . ' --user=' . escapeshellcmd($user->getUserId())
             . ' --tokentype=pintan'
-            . ' --server=' . escapeshellcmd($user->getBank()->getHbciUrl());
+            . ' --server=' . escapeshellcmd($user->getBank()->getHbciUrl())
+            . ' --hbciversion='. escapeshellcmd($user->getBank()->getHbciVersion()->getHbciVersion());
 
         $result = $this->getShellCommandExecutor()->execute($shellCommand);
 

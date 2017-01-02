@@ -37,6 +37,11 @@ class HbciVersion
         return (version_compare($this->versionNumber, $hbciVersion->versionNumber) > 0);
     }
 
+    public function getHbciVersion()
+    {
+        return $this->versionNumber;
+    }
+
     /**
      * @return string|null
      */

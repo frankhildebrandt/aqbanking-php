@@ -12,7 +12,7 @@ class ResultAnalyzer
         '/To debug set environment variable/',
         '/Your bank does not send an opening saldo/',
         '/Bank data for KtoBlzCheck not found/',
-        '/Executing Jobs: Started\./',
+        '/Executing Jobs/',
         '/A TLS packet with unexpected length was received\./'
     );
 
@@ -54,6 +54,7 @@ class ResultAnalyzer
                 return false;
             }
         }
+        echo $line;
         return true;
     }
 }
