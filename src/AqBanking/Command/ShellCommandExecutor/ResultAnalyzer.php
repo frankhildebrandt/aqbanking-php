@@ -12,8 +12,9 @@ class ResultAnalyzer
         '/To debug set environment variable/',
         '/Your bank does not send an opening saldo/',
         '/Bank data for KtoBlzCheck not found/',
-        '/Executing Jobs/',
-        '/A TLS packet with unexpected length was received\./'
+        '/Executing Jobs: Started\./',
+        '/A TLS packet with unexpected length was received\./',
+        '/===== Executing Jobs =====/',
     );
 
     /**
